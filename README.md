@@ -47,28 +47,29 @@ Unit tests are written using Catch2. The following components are covered:
 2. User handling logic (creation, authentication, role assignment)
 
 <br> 
-🔧 To compile and run the tests, use the following command:
- 
+To compile and run the tests, use the following command:
+
+
 <pre>g++ tests/test_user.cpp tests/test_utils.cpp src/user.cpp src/utils.cpp -o tests -std=c++17</pre>
 
 <pre>./tests</pre>
 
 <br><br>
 ## 🔐 Security
-Passwords are hashed before storing,
+Passwords are hashed before storing.
 
-All SQL queries use prepared statements (to prevent SQL injection),
+All SQL queries use prepared statements (to prevent SQL injection).
 
 Role-based permissions are enforced via a role field in the users table.
 
 <br><br>
 ## 📌 Requirements
 
-C++17 or newer,
+C++17 or newer
 
-MySQL Server,
+MySQL Server
 
-MySQL Connector/C++,
+MySQL Connector/C++
 
 Catch2 (for testing).
 
