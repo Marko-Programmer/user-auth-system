@@ -31,7 +31,7 @@ To set up the database:
 <br><br>
 ## 🛠️ Configuration
 
-1. Install MySQL Connector/C++
+1. Download and integrate MySQL Connector/C++ with your project.
 
 2. 📄 Setup config.txt
 Rename `config_template.txt` to `config.txt`, then fill in your MySQL credentials.
