@@ -48,7 +48,7 @@ Unit tests are written using Catch2. The following components are covered:
 
 <br> 
 To compile and run the tests, use the following command:
-<br>
+<br><br>
 
 1. <pre>g++ tests/test_user.cpp tests/test_utils.cpp src/user.cpp src/utils.cpp -o tests -std=c++17</pre>
 
@@ -79,6 +79,4 @@ See license.txt for license details.
 
 <br><br>
 ## 🙋‍♂️ Author
-Marko Zhenchuk
-
-This project is created as a learning/demo application for secure user authentication using modern C++ and MySQL.
+**Marko Zhenchuk**
