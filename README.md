@@ -1,1 +1,91 @@
-# User Auth System Project
+
+# 🛡️ User Authentication System (C++ & MySQL)
+
+This is a command-line user authentication system built in C++ with MySQL database support. It implements user registration, login, role-based menus, secure password hashing, unit testing with Catch2, modular file structure, and database integration using MySQL Connector/C++.
+
+---
+
+## ⚙️ Features
+
+- 🔐 User registration with secure password hashing
+- 🔑 Login with credential verification via MySQL
+- 🛠️ Role-based access: regular users and administrators
+- 🧪 Unit testing with [Catch2](https://github.com/catchorg/Catch2)
+- 🔄 MySQL database integration using `MySQL Connector/C++`
+- 🗂️ Modular multi-file project structure (`include/`, `src/`, `tests/`)
+- 🔧 Configurable database connection via `config.txt`
+
+--- 
+
+🗃️ Database Setup (MySQL)
+To set up the database:
+
+1. Create the database manually:
+
+CREATE DATABASE auth_system;
+USE auth_system;
+
+2. Then run the provided schema.sql script to create the users table with the required fields.
+
+🔐 Passwords are stored as hashes.
+
+---
+
+🛠️ Configuration
+
+1. Install MySQL Connector/C++
+
+2. 📄 Setup config.txt
+Rename `config_template.txt` to `config.txt`, then fill in your MySQL credentials.
+
+3. Install Catch2
+Catch2 is used for testing. It can be included as a single header or via CMake/vcpkg.
+
+---
+
+🧪 Unit Testing
+Unit tests are written using Catch2. The following components are covered:
+
+Input validation (utils)
+
+User handling logic (creation, authentication, role assignment)
+
+
+🔧 Build & Run Tests
+
+To compile and run the tests, use the following command:
+ 
+g++ tests/test_user.cpp tests/test_utils.cpp src/user.cpp src/utils.cpp -o tests -std=c++17
+./tests
+
+--- 
+
+🔐 Security
+Passwords are hashed before storing
+
+All SQL queries use prepared statements (to prevent SQL injection)
+
+Role-based permissions are enforced via a role field in the users table
+
+--- 
+
+📌 Requirements
+
+C++17 or newer
+
+MySQL Server
+
+MySQL Connector/C++
+
+Catch2 (for testing)
+
+--- 
+
+📝 License
+See license.txt for license details.
+
+--- 
+
+🙋‍♂️ Author
+Marko Zhenchuk
+This project is created as a learning/demo application for secure user authentication using modern C++ and MySQL.
