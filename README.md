@@ -48,8 +48,7 @@ Unit tests are written using Catch2. The following components are covered:
 
 <br> 
 To compile and run the tests, use the following command:
-
-
+<br>
 <pre>g++ tests/test_user.cpp tests/test_utils.cpp src/user.cpp src/utils.cpp -o tests -std=c++17</pre>
 
 <pre>./tests</pre>
