@@ -12,7 +12,7 @@
 config.txt
 
 *.vcxproj
-
+*.vcxproj.filters
 
 # User-specific files
 *.rsuser
