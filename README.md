@@ -36,9 +36,7 @@ To set up the database:
 2. 📄 Setup config.txt
 Rename `config_template.txt` to `config.txt`, then fill in your MySQL credentials.
 
-3. Install Catch2
-
-<pre>Catch2 is used for testing. It can be included as a single header or via CMake/vcpkg.</pre>
+3. Install Catch2 (Catch2 is used for testing. It can be included as a single header or via CMake/vcpkg).
 
 <br><br>
 ## 🧪 Unit Testing
@@ -48,10 +46,8 @@ Unit tests are written using Catch2. The following components are covered:
 
 2. User handling logic (creation, authentication, role assignment)
 
-<br>
-🔧 Build & Run Tests
-
-To compile and run the tests, use the following command:
+<br> 
+🔧 To compile and run the tests, use the following command:
  
 <pre>g++ tests/test_user.cpp tests/test_utils.cpp src/user.cpp src/utils.cpp -o tests -std=c++17</pre>
 
@@ -59,11 +55,11 @@ To compile and run the tests, use the following command:
 
 <br><br>
 ## 🔐 Security
-Passwords are hashed before storing
+Passwords are hashed before storing,
 
-All SQL queries use prepared statements (to prevent SQL injection)
+All SQL queries use prepared statements (to prevent SQL injection),
 
-Role-based permissions are enforced via a role field in the users table
+Role-based permissions are enforced via a role field in the users table.
 
 <br><br>
 ## 📌 Requirements
