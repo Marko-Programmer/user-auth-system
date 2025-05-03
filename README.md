@@ -14,20 +14,21 @@ This is a command-line user authentication system built in C++ with MySQL databa
 - 🗂️ Modular multi-file project structure (`include/`, `src/`, `tests/`)
 - 🔧 Configurable database connection via `config.txt`
 
-<br><br>
+<br>
 ## 🗃️ Database Setup (MySQL)
 To set up the database:
 
 1. Create the database manually:
 
-CREATE DATABASE auth_system;
-USE auth_system;
+<pre>CREATE DATABASE auth_system;</pre>
+
+<pre>USE auth_system;</pre>
 
 2. Then run the provided schema.sql script to create the users table with the required fields.
 
 🔐 Passwords are stored as hashes.
 
-<br><br>
+<br>
 ## 🛠️ Configuration
 
 1. Install MySQL Connector/C++
@@ -37,9 +38,9 @@ Rename `config_template.txt` to `config.txt`, then fill in your MySQL credential
 
 3. Install Catch2
 
-Catch2 is used for testing. It can be included as a single header or via CMake/vcpkg.
+<pre>Catch2 is used for testing. It can be included as a single header or via CMake/vcpkg.</pre>
 
-<br><br>
+<br>
 ## 🧪 Unit Testing
 Unit tests are written using Catch2. The following components are covered:
 
@@ -47,16 +48,16 @@ Unit tests are written using Catch2. The following components are covered:
 
 2. User handling logic (creation, authentication, role assignment)
 
-
+<br>
 🔧 Build & Run Tests
 
 To compile and run the tests, use the following command:
  
-g++ tests/test_user.cpp tests/test_utils.cpp src/user.cpp src/utils.cpp -o tests -std=c++17
+<pre>g++ tests/test_user.cpp tests/test_utils.cpp src/user.cpp src/utils.cpp -o tests -std=c++17</pre>
 
-./tests
+<pre>./tests</pre>
 
-<br><br>
+<br>
 ## 🔐 Security
 Passwords are hashed before storing
 
@@ -64,7 +65,7 @@ All SQL queries use prepared statements (to prevent SQL injection)
 
 Role-based permissions are enforced via a role field in the users table
 
-<br><br>
+<br>
 ## 📌 Requirements
 
 C++17 or newer,
@@ -75,7 +76,7 @@ MySQL Connector/C++,
 
 Catch2 (for testing).
 
-<br><br>
+<br>
 ## 📝 License
 See license.txt for license details.
 
