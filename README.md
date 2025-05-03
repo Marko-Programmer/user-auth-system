@@ -36,15 +36,16 @@ USE auth_system;
 Rename `config_template.txt` to `config.txt`, then fill in your MySQL credentials.
 
 3. Install Catch2
+
 Catch2 is used for testing. It can be included as a single header or via CMake/vcpkg.
 
 <br><br>
 ## 🧪 Unit Testing
 Unit tests are written using Catch2. The following components are covered:
 
-Input validation (utils)
+1. Input validation (utils)
 
-User handling logic (creation, authentication, role assignment)
+2. User handling logic (creation, authentication, role assignment)
 
 
 🔧 Build & Run Tests
@@ -52,6 +53,7 @@ User handling logic (creation, authentication, role assignment)
 To compile and run the tests, use the following command:
  
 g++ tests/test_user.cpp tests/test_utils.cpp src/user.cpp src/utils.cpp -o tests -std=c++17
+
 ./tests
 
 <br><br>
@@ -65,13 +67,13 @@ Role-based permissions are enforced via a role field in the users table
 <br><br>
 ## 📌 Requirements
 
-C++17 or newer
+C++17 or newer,
 
-MySQL Server
+MySQL Server,
 
-MySQL Connector/C++
+MySQL Connector/C++,
 
-Catch2 (for testing)
+Catch2 (for testing).
 
 <br><br>
 ## 📝 License
@@ -80,4 +82,5 @@ See license.txt for license details.
 <br><br>
 ## 🙋‍♂️ Author
 Marko Zhenchuk
+
 This project is created as a learning/demo application for secure user authentication using modern C++ and MySQL.
