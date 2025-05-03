@@ -3,7 +3,6 @@
 
 This is a command-line user authentication system built in C++ with MySQL database support. It implements user registration, login, role-based menus, secure password hashing, unit testing with Catch2, modular file structure, and database integration using MySQL Connector/C++.
 
----
 
 ## ⚙️ Features
 
@@ -15,9 +14,8 @@ This is a command-line user authentication system built in C++ with MySQL databa
 - 🗂️ Modular multi-file project structure (`include/`, `src/`, `tests/`)
 - 🔧 Configurable database connection via `config.txt`
 
---- 
 
-🗃️ Database Setup (MySQL)
+## 🗃️ Database Setup (MySQL)
 To set up the database:
 
 1. Create the database manually:
@@ -29,9 +27,8 @@ USE auth_system;
 
 🔐 Passwords are stored as hashes.
 
----
 
-🛠️ Configuration
+## 🛠️ Configuration
 
 1. Install MySQL Connector/C++
 
@@ -41,9 +38,8 @@ Rename `config_template.txt` to `config.txt`, then fill in your MySQL credential
 3. Install Catch2
 Catch2 is used for testing. It can be included as a single header or via CMake/vcpkg.
 
----
 
-🧪 Unit Testing
+## 🧪 Unit Testing
 Unit tests are written using Catch2. The following components are covered:
 
 Input validation (utils)
@@ -58,18 +54,16 @@ To compile and run the tests, use the following command:
 g++ tests/test_user.cpp tests/test_utils.cpp src/user.cpp src/utils.cpp -o tests -std=c++17
 ./tests
 
---- 
 
-🔐 Security
+## 🔐 Security
 Passwords are hashed before storing
 
 All SQL queries use prepared statements (to prevent SQL injection)
 
 Role-based permissions are enforced via a role field in the users table
 
---- 
 
-📌 Requirements
+## 📌 Requirements
 
 C++17 or newer
 
@@ -79,13 +73,11 @@ MySQL Connector/C++
 
 Catch2 (for testing)
 
---- 
 
-📝 License
+## 📝 License
 See license.txt for license details.
 
---- 
 
-🙋‍♂️ Author
+## 🙋‍♂️ Author
 Marko Zhenchuk
 This project is created as a learning/demo application for secure user authentication using modern C++ and MySQL.
