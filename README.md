@@ -3,7 +3,7 @@
 
 This is a command-line user authentication system built in C++ with MySQL database support. It implements user registration, login, role-based menus, secure password hashing, unit testing with Catch2, modular file structure, and database integration using MySQL Connector/C++.
 
-
+<br><br>
 ## ⚙️ Features
 
 - 🔐 User registration with secure password hashing
