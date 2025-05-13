@@ -20,9 +20,9 @@ To set up the database:
 
 1. Create the database manually:
 
-<pre>CREATE DATABASE auth_system;</pre>
+<pre>CREATE DATABASE authsystem;</pre>
 
-<pre>USE auth_system;</pre>
+<pre>USE authsystem;</pre>
 
 2. Then run the provided schema.sql script to create the users table with the required fields.
 
